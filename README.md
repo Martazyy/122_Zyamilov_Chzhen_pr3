@@ -3,9 +3,12 @@
 ### Часть 1
 
 
+
+### Содержание
+
 - [Задание 1](https://github.com/Martazyy/122_Zyamilov_pr3c1/edit/master/README.md#%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-1)
 - [Задание 2](https://github.com/Martazyy/122_Zyamilov_pr3c1/edit/master/README.md#%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-2)
-- [Задание 3](https://github.com/Martazyy/122_Zyamilov_pr3c1/edit/master/README.md#%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-3)
+- [Задание 3](#задание-3)
 
 
 
