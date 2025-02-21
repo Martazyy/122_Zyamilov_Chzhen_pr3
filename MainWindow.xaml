@@ -1,0 +1,42 @@
+﻿<Window x:Class="InterestCalculation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InterestCalculation"
+        mc:Ignorable="d"
+        Title="Расчет процентов" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Width="250" Height="234" Margin="0,87,0,0" Grid.RowSpan="7">
+            <TextBlock Text="Сумма:"/>
+            <TextBox Name="txtAmount" Width="242" ToolTip="Введите сумму для расечта"/>
+
+            <TextBlock Text="Срок (мес):"/>
+            <TextBox Name="txtTerm" Width="240" ToolTip="Введите срок в месяцах"/>
+
+            <TextBlock Text="Процентная ставка:"/>
+            <TextBox Name="txtRate" Width="239" ToolTip="Введите процентную ставку в %"/>
+
+            <GroupBox Header="Схема начисления %" Margin="0,10,0,10" ToolTip="При простых процентах проценты начисляются только на основную сумму долга или депозита, а при сложных — на начальную сумму вложений плюс на все накопленные ранее проценты.">
+                <StackPanel>
+                    <RadioButton Name="rbSimple" Content="Простые проценты" IsChecked="True"/>
+                    <RadioButton Name="rbCompound" Content="Сложные проценты"/>
+                </StackPanel>
+            </GroupBox>
+
+            <Button Content="Вычислить"  Width="100" HorizontalAlignment="Center" Margin="0,10,0,10" Click="Button_Click" ToolTip="Нажмите для расчета итоговой суммы"/>
+
+            <TextBlock Name="txtResult" FontSize="14" FontWeight="Bold" TextAlignment="Center" Foreground="Red"/>
+        </StackPanel>
+    </Grid>
+</Window>
